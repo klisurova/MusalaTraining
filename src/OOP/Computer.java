@@ -5,10 +5,18 @@ public class Computer {
     private double procSpeed;
     private String[] stringArray;
 
-    public Computer(String type, double procSpeed, String[] stringArray) {
+    public void Computer(String type) {//, double procSpeed, String[] stringArray) {
         this.type = type;
+    }
+
+    public void Computer(String type, double procSpeed) {
         this.procSpeed = procSpeed;
+        this.type = type;
+    }
+
+    public void Computer(double procSpeed, String[] stringArray) {
         this.stringArray = stringArray;
+        this.procSpeed = procSpeed;
     }
 
     public void setType(String type) {
@@ -42,7 +50,6 @@ public class Computer {
     }
 
     public static void main(String[] args) {
-
 
 
     }
