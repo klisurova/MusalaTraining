@@ -1,32 +1,34 @@
 package OOP;
 
+import java.util.concurrent.Callable;
+
 public class Computer {
-    private String type;
+    private String model;
     private double procSpeed;
-    private String[] stringArray;
+    private String[] fileNames;
 
-    public void Computer(String type) {//, double procSpeed, String[] stringArray) {
-        this.type = type;
+    public  Computer(String model) {
+        this.model = model;
     }
 
-    public void Computer(String type, double procSpeed) {
+    public  Computer(String model, double procSpeed) {
         this.procSpeed = procSpeed;
-        this.type = type;
+        this.model = model;
     }
 
-    public void Computer(double procSpeed, String[] stringArray) {
-        this.stringArray = stringArray;
+    public  Computer(double procSpeed, String[] fileNames) {
+        this.fileNames = fileNames;
         this.procSpeed = procSpeed;
     }
 
-    public void setType(String type) {
-        if (type == null) {
+    public void setModel(String model) {
+        if (model == null) {
             System.out.println("No Computer type specified");
-        } else this.type = type;
+        } else this.model = model;
     }
 
-    public String getType() {
-        return type;
+    public String getModel() {
+        return model;
     }
 
     public void setProcSpeed(double procSpeed) {
@@ -39,19 +41,25 @@ public class Computer {
         return procSpeed;
     }
 
-    public void setStringArray(String[] stringArray) {
-        if (stringArray == null) {
+    public void setFileNames(String[] fileNames) {
+        if (fileNames == null) {
             System.out.println("The computer has no files stored");
-        } else this.stringArray = stringArray;
+        } else this.fileNames = fileNames;
     }
 
-    public String[] getStringArray() {
-        return stringArray;
+    public String[] getFileNames() {
+        return fileNames;
     }
 
     public static void main(String[] args) {
 
+Computer computer1 = new Computer("HP", 2.4);
 
-    }
 
-}
+
+            }
+        }
+
+
+
+
