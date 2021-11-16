@@ -51,9 +51,13 @@ public class Computer {
         return fileNames;
     }
 
+    Computer computer1 = new Computer("HP", 2.4);
+    Computer computer2 = new Computer("MAC");
+    Computer computer3 = new Computer(2.4, );
+
     public static void main(String[] args) {
 
-Computer computer1 = new Computer("HP", 2.4);
+
 
 
 
