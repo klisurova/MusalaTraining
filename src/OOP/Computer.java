@@ -1,13 +1,19 @@
 package OOP;
 
 public class Computer {
-    String type;
-    double procSpeed;
-    String[] stringArray;
+    private String type;
+    private double procSpeed;
+    private String[] stringArray;
 
-    public Computer(String type, double procSpeed, String[] stringArray) {
+    public void type(String type) {
         this.type = type;
+    }
+
+    public void procspeed(double procSpeed) {
         this.procSpeed = procSpeed;
+    }
+
+    public void stringArray(String[] stringArray) {
         this.stringArray = stringArray;
     }
 
@@ -42,7 +48,6 @@ public class Computer {
     }
 
     public static void main(String[] args) {
-
 
 
     }
