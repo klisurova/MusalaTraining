@@ -61,9 +61,9 @@ public class ComputerVlatko {
     }
 
     public String toString() {
-        System.out.print(this.model + "," + " ");
-        System.out.print(this.procSpeed + "," + " ");
-        System.out.print(Arrays.toString(this.fileNames) + "," + " ");
+        System.out.print(this.model + " " + "|" + " ");
+        System.out.print(this.procSpeed + " " + "|" + " ");
+        System.out.print(Arrays.toString(this.fileNames) + " " + "|" + " ");
         System.out.println();
         return null;
     }
