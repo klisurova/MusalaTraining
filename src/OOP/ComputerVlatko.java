@@ -76,7 +76,7 @@ public class ComputerVlatko {
         ComputerVlatko computer2 = new ComputerVlatko("MAC");
         ComputerVlatko computer3 = new ComputerVlatko("MAC", 2.4, new String[]{"file1", "file2"});
 
-        //System.out.println(computer1);
+        // System.out.println(computer1);
         //System.out.println(computer2);
         //System.out.println(computer3);
 
