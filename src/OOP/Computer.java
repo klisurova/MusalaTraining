@@ -1,5 +1,6 @@
 package OOP;
 
+import java.util.Scanner;
 import java.util.concurrent.Callable;
 
 public class Computer {
@@ -16,7 +17,8 @@ public class Computer {
         this.model = model;
     }
 
-    public  Computer(double procSpeed, String[] fileNames) {
+    public  Computer(String model, double procSpeed, String[] fileNames) {
+        this.model = model;
         this.fileNames = fileNames;
         this.procSpeed = procSpeed;
     }
@@ -51,13 +53,14 @@ public class Computer {
         return fileNames;
     }
 
-    Computer computer1 = new Computer("HP", 2.4);
-    Computer computer2 = new Computer("MAC");
-    Computer computer3 = new Computer(2.4,  );
 
     public static void main(String[] args) {
 
+        System.out.println("Creation of 3 objects");
+        System.out.println(" Enter data for Computer1");
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Computer1's model: ");
 
 
 

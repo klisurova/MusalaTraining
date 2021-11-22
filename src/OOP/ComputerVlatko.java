@@ -12,6 +12,7 @@ public class ComputerVlatko {
     }
 
     public ComputerVlatko(String model, double procSpeed) {
+
         //super(model);
         this.procSpeed = procSpeed;
         this.model = model;
@@ -60,9 +61,9 @@ public class ComputerVlatko {
     }
 
     public String toString() {
-        System.out.println(this.model);
-        System.out.println(this.procSpeed);
-        System.out.println(Arrays.toString(this.fileNames));
+        System.out.print(this.model);
+        System.out.print(this.procSpeed);
+        System.out.print(Arrays.toString(this.fileNames));
         return null;
     }
 

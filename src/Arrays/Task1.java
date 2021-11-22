@@ -18,15 +18,19 @@ public class Task1 {
             System.out.println(s);
             scanner.nextLine();
         }
-for (int i=0; i< array.length; i++) {
+        double mod = 0;
+        for (int i = 0; i < array.length; i++) {
+            mod=array[i]%3;
+            Arrays.sort(array);
+        }
 
-GitTest
+            System.out.println("Най-малкото число кратно на 3 е " + array[0]);
 
-}
-
-}
 
     }
+
+}
+
 
 
 
