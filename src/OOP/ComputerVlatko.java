@@ -13,9 +13,9 @@ public class ComputerVlatko {
     }
 
     public ComputerVlatko(String model, double procSpeed) {
-        //super(model);
+        super(model);
         this.procSpeed = procSpeed;
-        this.model = model;
+
     }
 
     public ComputerVlatko(String model, double procSpeed, String[] fileNames) {
@@ -59,13 +59,13 @@ public class ComputerVlatko {
         return fileNames;
     }
 
-   // public String toString();
+    // public String toString();
 
 
-  //System.out.println(this.model);
+    //System.out.println(this.model);
 //System.out.println(this.procSpeed);
 //System.out.println(Arrays.toString(this.fileNames));
-  // }
+    // }
 
     public static void main(String[] args) {
 
@@ -91,11 +91,9 @@ public class ComputerVlatko {
         computer2.setModel("ASUS");
         computer3.setFileNames(new String[]{"file3", "file4"});
 
-       computer1.toString();
-       computer2.toString();
-       computer3.toString();
-
-
+        computer1.toString();
+        computer2.toString();
+        computer3.toString();
 
 
     }
