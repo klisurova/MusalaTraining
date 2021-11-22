@@ -78,10 +78,6 @@ public class ComputerVlatko {
         ComputerVlatko computer2 = new ComputerVlatko("MAC");
         ComputerVlatko computer3 = new ComputerVlatko("MAC", 2.4, new String[]{"file1", "file2"});
 
-        // System.out.println(computer1);
-        //System.out.println(computer2);
-        //System.out.println(computer3);
-
         System.out.print("Computer1: ");
         computer1.toString();
         System.out.print("Computer2: ");
@@ -97,10 +93,6 @@ public class ComputerVlatko {
         computer1.setProcSpeed(10.5);
         computer2.setModel("ASUS");
         computer3.setFileNames(new String[]{"file3", "file4"});
-
-        //System.out.println(computer1);
-        //System.out.println(computer2);
-        //System.out.println(computer3);
 
         System.out.print("Computer1: ");
         computer1.toString();
