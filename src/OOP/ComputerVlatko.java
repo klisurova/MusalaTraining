@@ -63,14 +63,14 @@ public class ComputerVlatko {
     public String toString() {
         System.out.print(this.model + "," + " ");
         System.out.print(this.procSpeed + "," + " ");
-        System.out.print(Arrays.toString(this.fileNames ) + "," + " " );
+        System.out.print(Arrays.toString(this.fileNames) + "," + " ");
         System.out.println();
         return null;
     }
 
     public static void main(String[] args) {
 
-        System.out.println("Initial computers' data ");
+        System.out.println("Initial Computers' Data ");
         System.out.println("*************************");
         System.out.println();
 
@@ -82,12 +82,15 @@ public class ComputerVlatko {
         //System.out.println(computer2);
         //System.out.println(computer3);
 
+        System.out.print("Computer1: ");
         computer1.toString();
+        System.out.print("Computer2: ");
         computer2.toString();
+        System.out.print("Computer3: ");
         computer3.toString();
 
         System.out.println();
-        System.out.println("Data after modifications ");
+        System.out.println("Data After Modifications ");
         System.out.println("*************************");
         System.out.println();
 
@@ -99,10 +102,12 @@ public class ComputerVlatko {
         //System.out.println(computer2);
         //System.out.println(computer3);
 
+        System.out.print("Computer1: ");
         computer1.toString();
+        System.out.print("Computer2: ");
         computer2.toString();
+        System.out.print("Computer3: ");
         computer3.toString();
-
 
     }
 }
