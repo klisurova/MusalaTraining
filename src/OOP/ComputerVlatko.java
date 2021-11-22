@@ -12,15 +12,12 @@ public class ComputerVlatko {
     }
 
     public ComputerVlatko(String model, double procSpeed) {
-
-        //super(model);
         this.procSpeed = procSpeed;
         this.model = model;
 
     }
 
     public ComputerVlatko(String model, double procSpeed, String[] fileNames) {
-        //super(model, procSpeed);
         this.fileNames = fileNames;
         this.model = model;
         this.procSpeed = procSpeed;
