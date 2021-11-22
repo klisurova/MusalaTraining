@@ -38,22 +38,28 @@ public class ComputerVlatko {
     }
 
     public void setProcSpeed(double procSpeed) {
-        if (procSpeed < 1.1) {
-            System.out.println("Unidentified Processor Speed");
-        } else this.procSpeed = procSpeed;
+        // if (procSpeed <= 1.1) {
+        // System.out.println("Unidentified Processor Speed");
+        this.procSpeed = procSpeed;
     }
 
     public double getProcSpeed() {
+        if (procSpeed <= 1.1) {
+            System.out.println("Unidentified Processor Speed");
+        } else this.procSpeed = procSpeed;
         return procSpeed;
     }
 
     public void setFileNames(String[] fileNames) {
-        if (fileNames == null) {
-            System.out.println("The computer has no files stored");
-        } else this.fileNames = fileNames;
+        //if (fileNames == null) {
+        // System.out.println("The computer has no files stored");
+        this.fileNames = fileNames;
     }
 
     public String[] getFileNames() {
+        if (fileNames == null) {
+            System.out.println("The computer has no files stored");
+        } else this.fileNames = fileNames;
         return fileNames;
     }
 
@@ -87,7 +93,7 @@ public class ComputerVlatko {
         System.out.println("*************************");
         System.out.println();
 
-        computer1.setProcSpeed(10.5);
+        computer1.setProcSpeed(0.2);
         computer2.setModel("ASUS");
         computer3.setFileNames(new String[]{"file3", "file4"});
 
@@ -97,6 +103,9 @@ public class ComputerVlatko {
         computer2.toString();
         System.out.print("Computer3: ");
         computer3.toString();
+
+        System.out.println(computer1.getProcSpeed());
+        System.out.println(computer1.getFileNames());
 
     }
 }
