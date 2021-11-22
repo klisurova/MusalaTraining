@@ -1,7 +1,6 @@
 package OOP;
 
 import java.util.Arrays;
-import java.util.concurrent.Callable;
 
 public class ComputerVlatko {
     private String model;
@@ -60,13 +59,12 @@ public class ComputerVlatko {
         return fileNames;
     }
 
-    // public String toString();
-
-
-    //System.out.println(this.model);
-//System.out.println(this.procSpeed);
-//System.out.println(Arrays.toString(this.fileNames));
-    // }
+    public String toString() {
+        System.out.println(this.model);
+        System.out.println(this.procSpeed);
+        System.out.println(Arrays.toString(this.fileNames));
+        return null;
+    }
 
     public static void main(String[] args) {
 
@@ -74,13 +72,17 @@ public class ComputerVlatko {
         System.out.println("*************************");
         System.out.println();
 
-        Computer computer1 = new Computer("HP", 2.4);
-        Computer computer2 = new Computer("MAC");
-        Computer computer3 = new Computer("MAC", 2.4, new String[]{"file1", "file2"});
+        ComputerVlatko computer1 = new ComputerVlatko("HP", 2.4);
+        ComputerVlatko computer2 = new ComputerVlatko("MAC");
+        ComputerVlatko computer3 = new ComputerVlatko("MAC", 2.4, new String[]{"file1", "file2"});
 
-        System.out.println(computer1);
-        System.out.println(computer2);
-        System.out.println(computer3);
+        //System.out.println(computer1);
+        //System.out.println(computer2);
+        //System.out.println(computer3);
+
+        computer1.toString();
+        computer2.toString();
+        computer3.toString();
 
         System.out.println();
         System.out.println("Data after modifications ");
@@ -91,13 +93,13 @@ public class ComputerVlatko {
         computer2.setModel("ASUS");
         computer3.setFileNames(new String[]{"file3", "file4"});
 
-        System.out.println(computer1);
-        System.out.println(computer2);
-        System.out.println(computer3);
+        //System.out.println(computer1);
+        //System.out.println(computer2);
+        //System.out.println(computer3);
 
-        //computer1.toString();
-        //computer2.toString();
-        //computer3.toString();
+        computer1.toString();
+        computer2.toString();
+        computer3.toString();
 
 
     }
