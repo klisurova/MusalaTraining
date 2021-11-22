@@ -13,8 +13,9 @@ public class ComputerVlatko {
     }
 
     public ComputerVlatko(String model, double procSpeed) {
-        super(model);
+        //super(model);
         this.procSpeed = procSpeed;
+        this.model = model;
 
     }
 
@@ -77,7 +78,6 @@ public class ComputerVlatko {
         Computer computer2 = new Computer("MAC");
         Computer computer3 = new Computer("MAC", 2.4, new String[]{"file1", "file2"});
 
-
         System.out.println(computer1);
         System.out.println(computer2);
         System.out.println(computer3);
@@ -91,9 +91,13 @@ public class ComputerVlatko {
         computer2.setModel("ASUS");
         computer3.setFileNames(new String[]{"file3", "file4"});
 
-        computer1.toString();
-        computer2.toString();
-        computer3.toString();
+        System.out.println(computer1);
+        System.out.println(computer2);
+        System.out.println(computer3);
+
+        //computer1.toString();
+        //computer2.toString();
+        //computer3.toString();
 
 
     }
