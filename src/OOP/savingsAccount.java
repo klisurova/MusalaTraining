@@ -46,10 +46,9 @@ public class savingsAccount {
     }
 
     double calculateMonthlyInterest;
-
     public double calculateMonthlyInterest() {
         calculateMonthlyInterest = (this.SavingsBalance * this.AnnualInterestRate) / 12;
-        return calculateMonthlyInterest;
+        return (calculateMonthlyInterest + SavingsBalance);
     }
 
     public String toString() {
@@ -60,8 +59,13 @@ public class savingsAccount {
 
     double modifyInterestRate;
 
-    public static void setModifyInterestRate(double modifyInterestRate) {
-    }
+    //public static void setModifyInterestRate(double modifyInterestRate) {
+
+    public void isGreater(){
+
+
+    };
+
 
 
     public static void main(String[] args) {
