@@ -46,8 +46,9 @@ public class savingsAccount {
     }
 
     double calculateMonthlyInterest;
-    public double calculateMonthlyInterest(){
-        calculateMonthlyInterest = (this.SavingsBalance*this.AnnualInterestRate)/12;
+
+    public double calculateMonthlyInterest() {
+        calculateMonthlyInterest = (this.SavingsBalance * this.AnnualInterestRate) / 12;
         return calculateMonthlyInterest;
     }
 
@@ -57,8 +58,19 @@ public class savingsAccount {
         return null;
     }
 
+    double modifyInterestRate;
+
+    public static void setModifyInterestRate(double modifyInterestRate) {
+    }
+
+
     public static void main(String[] args) {
 
+        savingsAccount account1 = new savingsAccount(1232.5, 3);
+        savingsAccount account2 = new savingsAccount(1452.8, 4);
+        if (account1.equals(account2)) {
+            System.out.println("Account1 and Account2 have equal saving balances");
+        } else System.out.println("Account1 and Account2 haven't equal saving balances");
     }
 
 }
