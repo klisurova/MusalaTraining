@@ -23,10 +23,6 @@ public class ComputerVlatko {
         this.procSpeed = procSpeed;
     }
 
-    public ComputerVlatko() {
-        System.out.println("Default constructor that creates empty object");
-    }
-
     public void setModel(String model) {
         if (model == null) {
             System.out.println("No Computer type specified");
@@ -38,8 +34,6 @@ public class ComputerVlatko {
     }
 
     public void setProcSpeed(double procSpeed) {
-        // if (procSpeed <= 1.1) {
-        // System.out.println("Unidentified Processor Speed");
         this.procSpeed = procSpeed;
     }
 
@@ -51,8 +45,6 @@ public class ComputerVlatko {
     }
 
     public void setFileNames(String[] fileNames) {
-        //if (fileNames == null) {
-        // System.out.println("The computer has no files stored");
         this.fileNames = fileNames;
     }
 
@@ -108,6 +100,16 @@ public class ComputerVlatko {
         System.out.println("Computer1 Model: " + computer1.getModel());
         System.out.println("Computer1 Processor Speed: " + computer1.getProcSpeed());
         System.out.println("Computer1 Files Stored: " + computer1.getFileNames());
+
+        System.out.println();
+        System.out.println("Computer2 Model: " + computer2.getModel());
+        System.out.println("Computer2 Processor Speed: " + computer2.getProcSpeed());
+        System.out.println("Computer2 Files Stored: " + computer2.getFileNames());
+
+        System.out.println();
+        System.out.println("Computer3 Model: " + computer3.getModel());
+        System.out.println("Computer3 Processor Speed: " + computer3.getProcSpeed());
+        System.out.println("Computer3 Files Stored: " + computer3.getFileNames());
 
     }
 }
