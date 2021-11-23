@@ -48,7 +48,7 @@ public class savingsAccount {
     double calculateMonthlyInterest;
     public double calculateMonthlyInterest() {
         calculateMonthlyInterest = (this.SavingsBalance * this.AnnualInterestRate) / 12;
-        return (calculateMonthlyInterest + SavingsBalance);
+        return (calculateMonthlyInterest + this.SavingsBalance);
     }
 
     public String toString() {
