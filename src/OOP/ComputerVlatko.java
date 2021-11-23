@@ -104,8 +104,10 @@ public class ComputerVlatko {
         System.out.print("Computer3: ");
         computer3.toString();
 
-        System.out.println(computer1.getProcSpeed());
-        System.out.println(computer1.getFileNames());
+        System.out.println();
+        System.out.println("Computer1 Model: " + computer1.getModel());
+        System.out.println("Computer1 Processor Speed: " + computer1.getProcSpeed());
+        System.out.println("Computer1 Files Stored: " + computer1.getFileNames());
 
     }
 }
