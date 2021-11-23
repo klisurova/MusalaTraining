@@ -45,7 +45,6 @@ public class savingsAccount {
         return Number;
     }
 
-
     public String toString() {
         System.out.println(this.SavingsBalance);
         return null;
