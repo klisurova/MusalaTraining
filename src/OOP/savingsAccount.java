@@ -68,9 +68,15 @@ public class savingsAccount {
 
         savingsAccount account1 = new savingsAccount(1232.5, 3);
         savingsAccount account2 = new savingsAccount(1452.8, 4);
-        if (account1.equals(account2)) {
+        if (account1.SavingsBalance == account2.SavingsBalance) {
             System.out.println("Account1 and Account2 have equal saving balances");
         } else System.out.println("Account1 and Account2 haven't equal saving balances");
+
+        System.out.println();
+        savingsAccount account3 = new savingsAccount(1232.5,5);
+        if (account1.SavingsBalance == account3.SavingsBalance) {
+            System.out.println("Account1 and Account3 have equal saving balances");
+        } else System.out.println("Account1 and Account3 haven't equal saving balances");
     }
 
 }
