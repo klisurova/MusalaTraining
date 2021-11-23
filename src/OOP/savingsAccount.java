@@ -45,8 +45,15 @@ public class savingsAccount {
         return Number;
     }
 
+    double calculateMonthlyInterest;
+    public double calculateMonthlyInterest(){
+        calculateMonthlyInterest = (this.SavingsBalance*this.AnnualInterestRate)/12;
+        return calculateMonthlyInterest;
+    }
+
     public String toString() {
         System.out.println(this.SavingsBalance);
+        System.out.println(calculateMonthlyInterest);
         return null;
     }
 
