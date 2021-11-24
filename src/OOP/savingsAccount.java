@@ -6,33 +6,29 @@ public class savingsAccount {
     private double savingsBalance;
     private int number;
 
-    // public savingsAccount(double AnnualInterestRate) {
-    //   this.AnnualInterestRate = AnnualInterestRate;
-    // }
-
     public savingsAccount(double savingsBalance) {
         this.savingsBalance = savingsBalance;
         annualInterestRate = 2.5;
     }
 
-    //public savingsAccount(savingsAccount account) {
-    //  savingsBalance = account.savingsBalance;
-    //annualInterestRate = account.getannualInterestRate();
-    //}
+    public savingsAccount(double savingsBalance, int number){
+        this.savingsBalance = savingsBalance;
+        this.number = number;
+    }
 
-    public double getannualInterestRate() {
+    public double getAnnualInterestRate() {
         return annualInterestRate;
     }
 
-    public void setsavingsBalance(double savingBalance) {
+    public void setSavingsBalance(double savingBalance) {
         this.savingsBalance = savingBalance;
     }
 
-    public double getsavingsBalance() {
+    public double getSavingsBalance() {
         return savingsBalance;
     }
 
-    public void setnumber(int number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
