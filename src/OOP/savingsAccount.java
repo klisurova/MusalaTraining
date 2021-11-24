@@ -16,8 +16,8 @@ public class savingsAccount {
     }
 
     //public savingsAccount(savingsAccount account) {
-      //  savingsBalance = account.savingsBalance;
-        //annualInterestRate = account.getannualInterestRate();
+    //  savingsBalance = account.savingsBalance;
+    //annualInterestRate = account.getannualInterestRate();
     //}
 
     public double getannualInterestRate() {
@@ -59,7 +59,6 @@ public class savingsAccount {
         annualInterestRate = modifyInterestRate;
     }
 
-
     public boolean isGreater(savingsAccount account) {
         return this.savingsBalance > account.savingsBalance;
     }
@@ -73,12 +72,16 @@ public class savingsAccount {
         } else System.out.println("Account1 savings balance is NOT greater than Account2");
 
         System.out.println();
-        savingsAccount account3 = new savingsAccount(1232.5);
+        savingsAccount account3 = new savingsAccount(account1.savingsBalance);
         if (account1.savingsBalance == account3.savingsBalance) {
             System.out.println("Account1 and Account3 have equal saving balances");
-        } else System.out.println("Account1 and Account3 haven't equal saving balances");
+        } else {
+            if (account1.isGreater(account3)) {
+                System.out.println("Account1 savings balance is greater than Account3");
+            } else {
+                System.out.println("Account1 savings balance is NOT greater than Account3");
+            }
 
-
+        }
     }
-
 }
